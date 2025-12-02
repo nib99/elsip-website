@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite" // Change to "postgresql" for production
+  url      = env("DATABASE_URL")
+}
+
+model Worker {
+  id            Int      @id @default(autoincrement())
+  fullName      String
+  phone         String   @unique
+  region        String?
+  skills        String[]
+  experience    Float?
+  assessmentScore Int?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Job {
+  id          Int      @id @default(autoincrement())
+  title       String
+  matchScore  Float
+  salary      String
+  company     String
+  createdAt   DateTime @default(now())
+}
+
+model Inspection {
+  id          Int      @id @default(autoincrement())
+  company     String
+  location    String
+  violations  String[]
+  status      String
+  inspector   String
+  createdAt   DateTime @default(now())
+}
+

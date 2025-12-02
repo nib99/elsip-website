@@ -1,0 +1,30 @@
+{
+  "name": "elsip-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "next": "15.0.0-rc.0",
+    "react": "19.0.0-rc-f38c22b0-20241022",
+    "react-dom": "19.0.0-rc-f38c22b0-20241022",
+    "@prisma/client": "^5.12.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.304.0",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "prisma": "^5.12.0",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
+  }
+}
+

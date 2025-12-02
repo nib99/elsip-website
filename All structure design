@@ -1,0 +1,47 @@
+elsip-website/
+├── app/
+│   ├── globals.css
+│   ├── layout.js
+│   ├── page.js                 # Home
+│   ├── admin/
+│   │   └── page.js
+│   ├── register/
+│   │   └── page.js            # Pillar 1
+│   ├── credentials/
+│   │   └── page.js            # Pillar 2
+│   ├── inspections/
+│   │   └── page.js            # Pillar 3
+│   ├── problem/
+│   │   └── page.js
+│   ├── solution/
+│   │   └── page.js
+│   ├── roadmap/
+│   │   └── page.js
+│   └── api/
+│       ├── admin/
+│       │   ├── login/
+│       │   │   └── route.js
+│       │   └── stats/
+│       │       └── route.js
+│       ├── workers/
+│       │   └── route.js
+│       └── inspections/
+│           └── route.js
+├── prisma/
+│   └── schema.prisma
+├── public/
+│   ├── favicon.ico
+│   └── og-image.jpg
+├── components/
+│   ├── ui/
+│   │   └── button.js
+│   └── pillars/
+│       └── index.js
+├── lib/
+│   ├── auth.js
+│   └── db.js
+├── next.config.js
+├── tailwind.config.js
+├── package.json
+└── README.md
+
